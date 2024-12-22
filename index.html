@@ -4,68 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Àssa Shop</title>
-    <link rel="stylesheet" href="style_shop.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="snow-container"></div>
     <header>
         <nav>
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#price">Price</a></li>
-                <li><a href="#product">Product</a></li>
+                <li><a href="#products">Products</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="tabs">
-        <button onclick="showTab('home')">Home</button>
-        <button onclick="showTab('price')">Price</button>
-        <button onclick="showTab('product')">Product</button>
-    </div>
-
-    <section id="home" class="tab-content active-tab">
+    <section id="home">
         <h1>Добро пожаловать в Àssa Shop</h1>
         <p>Здесь вы найдете всё, что вам нужно!</p>
     </section>
 
-    <section id="price" class="tab-content">
-        <h2>Цены на услуги</h2>
+    <section id="price">
+        <h2>Прайс</h2>
+        <p>Тут вы можете ознакомиться с нашими ценами.</p>
+        <ul>
+            <li>Хостинг: 100₽/месяц</li>
+            <li>Кастомные модули: зависит от сложности₽/шт.</li>
+            <li>Модули для Hikka: от 300 ₽</li>
+        </ul>
+    </section>
+
+    <section id="products">
+        <h2>Товары</h2>
         <div class="products-grid">
             <div class="product-card">
                 <h3>Хостинг</h3>
                 <p>Надежный хостинг для ваших проектов.</p>
-                <p>Цена: 100 ₽/месяц</p>
             </div>
             <div class="product-card">
                 <h3>Аккаунты</h3>
                 <p>Проверенные аккаунты для любых целей.</p>
-                <p>Цена: от 50 ₽</p>
             </div>
             <div class="product-card">
                 <h3>Модули</h3>
                 <p>Кастомные модули для Hikka Userbot.</p>
-                <p>Цена: зависит от сложности.</p>
             </div>
         </div>
     </section>
 
-    <section id="product" class="tab-content">
-        <h2>Продукция</h2>
-        <div class="contact-section">
-            <h2>Контакты</h2>
-            <p>Свяжитесь со мной в Telegram:</p>
-            <a href="https://t.me/codermasochist" class="button" target="_blank">Telegram</a>
-        </div>
-
-        <div class="audio-container">
-            <h3>Музыка для вас</h3>
-            <audio controls autoplay loop>
-                <source src="https://x0.at/sVBd.mp3" type="audio/mpeg">
-            </audio>
-        </div>
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Свяжитесь со мной в Telegram:</p>
+        <a href="https://t.me/codermasochist" class="button" target="_blank">Telegram</a>
     </section>
 
-    <script src="shop.js"></script>
+    <section id="music">
+        <h2>Музыка для вас</h2>
+        <audio controls autoplay loop>
+            <source src="https://x0.at/sVBd.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
