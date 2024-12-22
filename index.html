@@ -7,28 +7,40 @@
     <link rel="stylesheet" href="style_shop.css">
 </head>
 <body>
-    <div class="snow-container"></div>
+
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="#home">home</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#product">Product</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
+    <div class="tabs">
+        <button onclick="showTab('home')">Home</button>
+        <button onclick="showTab('price')">Price</button>
+        <button onclick="showTab('product')">Product</button>
+    </div>
+
+    <section id="home" class="tab-content active-tab">
         <h1>Добро пожаловать в Àssa Shop</h1>
         <p>Здесь вы найдете всё, что вам нужно!</p>
+    </section>
+
+    <section id="price" class="tab-content">
+        <h2>Цены на услуги</h2>
         <div class="products-grid">
             <div class="product-card">
                 <h3>Хостинг</h3>
-                <p>Надежный хостинг для Hikka userbot.</p>
+                <p>Надежный хостинг для ваших проектов.</p>
                 <p>Цена: 100 ₽/месяц</p>
             </div>
             <div class="product-card">
                 <h3>Аккаунты</h3>
                 <p>Проверенные аккаунты для любых целей.</p>
-                <p>Цена: от ? ₽</p>
+                <p>Цена: от 50 ₽</p>
             </div>
             <div class="product-card">
                 <h3>Модули</h3>
@@ -36,17 +48,21 @@
                 <p>Цена: зависит от сложности.</p>
             </div>
         </div>
+    </section>
 
+    <section id="product" class="tab-content">
+        <h2>Продукция</h2>
         <div class="contact-section">
             <h2>Контакты</h2>
             <p>Свяжитесь со мной в Telegram:</p>
             <a href="https://t.me/codermasochist" class="button" target="_blank">Telegram</a>
-            <div class="audio-container">
-                <h3>Музыка для вас</h3>
-                <audio controls autoplay loop>
-                    <source src="https://x0.at/sVBd.mp3" type="audio/mpeg">
-                </audio>
-            </div>
+        </div>
+
+        <div class="audio-container">
+            <h3>Музыка для вас</h3>
+            <audio controls autoplay loop>
+                <source src="https://x0.at/sVBd.mp3" type="audio/mpeg">
+            </audio>
         </div>
     </section>
 
